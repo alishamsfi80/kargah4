@@ -1,0 +1,197 @@
+*
+{
+    margin: 0;
+}
+
+body
+{
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+#firstheaderbtns
+{
+    margin: 15px;
+    direction: ltr;
+}
+
+#firstheadertitle
+{
+    direction: rtl;
+    margin: 15px;
+    font-family: 'Irannastaliq';
+}
+
+.header
+{
+    overflow-x: hidden;
+    
+    background-image: url(images/room5.jpg);
+    width: 100%;
+    height: 800px;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+
+}
+
+.headernav
+{
+    /* margin-top: 50px; */
+    width: 100%;
+    height: 60px;
+    background-color: rgba(38, 35, 35, 0.7);
+}
+
+.headerul
+{
+    display: flex;
+    direction: rtl;
+}
+
+.headerli
+{
+    margin: 15px;
+    text-decoration:none;
+}
+
+.headerlink
+{
+    text-decoration: none;
+    color: white;   
+}
+
+.headerh2
+{
+    margin: 15px;
+    color: white;
+    font-size:xx-large;
+}
+
+.footer
+{
+    width: 100%;
+    height: 300px;
+    background-color: black;
+}
+
+.footerp
+{
+    color: orange;
+    margin-right: 30px;
+}
+
+.footerh2
+{
+    color: white;
+    margin-right: 30px;
+}
+
+.footerlogo
+{   margin: 10px;
+    margin-top: 50px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid blue;
+    border-radius: 10px;
+}
+
+.footerlogo:hover
+{
+    transition: 1s;
+    transform: scale(1.2);
+    background-color: greenyellow;
+}
+
+.footerimage
+{
+    margin-top: 50px;
+    height: 200px;
+    width: 350px;
+}
+
+.loginform
+{
+    background-image: url(images/formback.jpg);
+    margin-left: 480px;
+    padding: 40px;
+    direction: rtl;
+    background-color: white;
+    border: black solid;
+    border-width: 1px;
+    border-radius: 20px;
+    justify-content: center;
+    width: 500px;
+    height: 400px;
+}
+
+.registerform
+{
+    background-image: url(images/formback.jpg);
+    margin-left: 480px;
+    padding: 40px;
+    direction: rtl;
+    background-color: white;
+    border: black solid;
+    border-width: 1px;
+    border-radius: 20px;
+    justify-content: center;
+    width: 500px;
+    height: 690px;
+}
+
+#reservecard
+{
+    direction: rtl;
+    background-color: white;
+    border: black solid;
+    border-width: 1px;
+    border-radius: 30px;
+    box-shadow: 10px 10px 10px;
+    height: 700px;
+    margin: 10px;
+    width: 22%;
+}
+
+.cardimg
+{
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.reservebox
+{
+    background-image: url(images/bookback.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    direction: rtl;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px;
+    margin: auto;
+    width: 30%;
+    height: 550px;
+    background-color: white;
+}
+
+.bookcombo
+{
+    margin: auto;
+    width: 400px;
+    height: 50px;
+    border: black solid;
+    border-width: 1px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px;
+}
+
+.bookprice
+{
+    margin: auto;
+    width: 400px;
+    height: 50px;
+    border: black solid;
+    border-width: 1px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px;
+    text-align: center;
+}

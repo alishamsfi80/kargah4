@@ -195,3 +195,128 @@ body
     box-shadow: 5px 5px 5px;
     text-align: center;
 }
+
+.logincheckp
+{
+    margin: auto;
+    color: aliceblue;
+    text-align: center;
+}
+
+.loginactionparent
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loginaction
+{
+    margin-top: 40px;
+    font-size: xx-large;
+    font-family: 'B Titr';
+    text-align: center;
+    border: 1px black solid;
+    border-radius: 20px;
+    width: 400px;
+    height: 200px;
+    background-color: rgb(24, 158, 35);
+}
+
+#loginaction2
+{
+    margin-top: 40px;
+    font-size: xx-large;
+    font-family: 'B Titr';
+    text-align: center;
+    border: 1px black solid;
+    border-radius: 20px;
+    width: 400px;
+    height: 200px;
+    background-color: rgb(164, 13, 30);
+    color: white;
+}
+
+.managecardparent
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.managecard
+{
+    border: 1px black solid;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px;
+    width: 1000px;
+    height: 700px;
+    background-color: rgb(38, 146, 173);
+}
+
+#addroombtn
+{
+    margin-top: 50px;
+    width: 400px;
+}
+
+#editroomcard
+{
+    margin: auto;
+    width: 340px;
+    height: 500px;
+    background-color: white;
+    border: 1px black solid;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+#editroomcardparent
+{
+    direction: rtl;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.editroomimg
+{
+    width: 300px;
+    border-radius: 20px;
+}
+
+.addroomparent
+{
+    direction: rtl;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addroom
+{
+    margin: 10px;
+    width: 400px;
+    height: 500px;
+    background-color: blue;
+    border: 1px black solid;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px;
+}
+
+.addroomform
+{
+    width: 300px;
+}
+
+input {
+    text-align: center;
+  }
+  
+  ::-webkit-input-placeholder {
+    text-align: center;
+  }
+  
+  :-moz-placeholder {
+    text-align: center;
+  }

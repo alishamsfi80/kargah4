@@ -53,7 +53,9 @@ for ($i=0;$i<intdiv($counter, 4);$i++)
             echo "<h6>$v</h6>";
             ?>
             <br /><br />
-            <center><button class="btn btn-danger" onclick="window.location.href='booking.php';">رزرو اتاق</button>
+            <center>
+                <!-- <button class="btn btn-danger" onclick="window.location.href='booking.php';">رزرو اتاق</button> -->
+                <a class="btn btn-danger" href="booking.php?id=<?php echo $row[$test]['id'];?> ">رزرو اتاق</a>
             </center>
         </div>
 
@@ -83,7 +85,9 @@ for ($i=0;$i<intdiv($counter, 4);$i++)
             echo "<h6>$v</h6>";
             ?>
             <br /><br />
-            <center><button class="btn btn-danger" onclick="window.location.href='booking.php';">رزرو اتاق</button>
+            <center>
+                <!-- <button class="btn btn-danger" onclick="window.location.href='booking.php';">رزرو اتاق</button> -->
+                <a class="btn btn-danger" href="booking.php?id=<?php echo $row[$test2]['id'];?> ">رزرو اتاق</a>
             </center>
         </div>
         <div class="col-md-3" id="reservecard">
@@ -112,7 +116,9 @@ for ($i=0;$i<intdiv($counter, 4);$i++)
             echo "<h6>$v</h6>";
             ?>
             <br /><br />
-            <center><button class="btn btn-danger" onclick="window.location.href='booking.php';">رزرو اتاق</button>
+            <center>
+                <!-- <button class="btn btn-danger" onclick="window.location.href='booking.php';">رزرو اتاق</button> -->
+                <a class="btn btn-danger" href="booking.php?id=<?php echo $row[$test3]['id'];?> ">رزرو اتاق</a>
             </center>
         </div>
         <div class="col-md-3" id="reservecard">
@@ -141,7 +147,9 @@ for ($i=0;$i<intdiv($counter, 4);$i++)
             echo "<h6>$v</h6>";
             ?>
             <br /><br />
-            <center><button class="btn btn-danger" onclick="window.location.href='booking.php';">رزرو اتاق</button>
+            <center>
+                <!-- <button class="btn btn-danger" onclick="window.location.href='booking.php';">رزرو اتاق</button> -->
+                <a class="btn btn-danger" href="booking.php?id=<?php echo $row[$test4]['id'];?> ">رزرو اتاق</a>
             </center>
         </div>
         
@@ -185,7 +193,9 @@ if ($counter-$k==3)
             echo "<h6>$v</h6>";
             ?>
             <br /><br />
-            <center><button class="btn btn-danger" onclick="window.location.href='booking.php';">رزرو اتاق</button>
+            <center>
+             <a class="btn btn-danger" href="booking.php?id=<?php echo $row[$k]['id'];?> ">رزرو اتاق</a>
+                <!-- <button class="btn btn-danger" onclick="window.location.href='booking.php';">رزرو اتاق</button> -->
             </center>
         </div>
 
@@ -215,7 +225,9 @@ if ($counter-$k==3)
             echo "<h6>$v</h6>";
             ?>
             <br /><br />
-            <center><button class="btn btn-danger" onclick="window.location.href='booking.php';">رزرو اتاق</button>
+            <center>
+            <a class="btn btn-danger" href="booking.php?id=<?php echo $row[$k1]['id'];?> ">رزرو اتاق</a>
+                <!-- <button class="btn btn-danger" onclick="window.location.href='booking.php';">رزرو اتاق</button> -->
             </center>
         </div>
 
@@ -245,7 +257,9 @@ if ($counter-$k==3)
             echo "<h6>$v</h6>";
             ?>
             <br /><br />
-            <center><button class="btn btn-danger" onclick="window.location.href='booking.php';">رزرو اتاق</button>
+            <center>
+            <a class="btn btn-danger" href="booking.php?id=<?php echo $row[$k2]['id'];?> ">رزرو اتاق</a>
+                <!-- <button class="btn btn-danger" onclick="window.location.href='booking.php';">رزرو اتاق</button> -->
             </center>
         </div>
         <?php
@@ -280,7 +294,9 @@ else if ($counter-$k==2)
             echo "<h6>$v</h6>";
             ?>
             <br /><br />
-            <center><button class="btn btn-danger" onclick="window.location.href='booking.php';">رزرو اتاق</button>
+            <center>
+            <a class="btn btn-danger" href="booking.php?id=<?php echo $row[$k]['id'];?> ">رزرو اتاق</a>
+                <!-- <button class="btn btn-danger" onclick="window.location.href='booking.php';">رزرو اتاق</button> -->
             </center>
         </div>
 
@@ -310,7 +326,9 @@ else if ($counter-$k==2)
             echo "<h6>$v</h6>";
             ?>
             <br /><br />
-            <center><button class="btn btn-danger" onclick="window.location.href='booking.php';">رزرو اتاق</button>
+            <center>
+            <a class="btn btn-danger" href="booking.php?id=<?php echo $row[$k1]['id'];?> ">رزرو اتاق</a>
+                <!-- <button class="btn btn-danger" onclick="window.location.href='booking.php';">رزرو اتاق</button> -->
             </center>
         </div>
 <?php
@@ -344,7 +362,9 @@ else if ($counter-$k==1)
             echo "<h6>$v</h6>";
             ?>
             <br /><br />
-            <center><button class="btn btn-danger" onclick="window.location.href='booking.php';">رزرو اتاق</button>
+            <center>
+            <a class="btn btn-danger" href="booking.php?id=<?php echo $row[$k]['id'];?> ">رزرو اتاق</a>
+                <!-- <button class="btn btn-danger" onclick="window.location.href='booking.php';">رزرو اتاق</button> -->
             </center>
         </div>
 

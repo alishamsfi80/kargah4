@@ -1,15 +1,16 @@
-<?php include('header.php'); ?>
+<?php include('header.php');
+include('function.php'); ?>
 
 <div class="header">
 <?php
 //echo $_POST['email'];
-if (isset($_POST['first_name'])  && !empty($_POST['first_name']) && 
-isset($_POST['last_name']) && !empty($_POST['last_name']) && 
-isset($_POST['national_code']) && !empty($_POST['national_code']) &&
-isset($_POST['email']) && !empty($_POST['email']) &&
-isset($_POST['phone_number']) && !empty($_POST['phone_number']) && 
-isset($_POST['password']) && !empty($_POST['password']) &&
-isset($_POST['repassword']) && !empty($_POST['repassword']))
+if (check ($_POST['first_name']) && 
+check ($_POST['last_name']) && 
+check ($_POST['national_code']) &&
+check ($_POST['email']) &&
+check ($_POST['phone_number']) && 
+check ($_POST['password'])&&
+check ($_POST['repassword']))
 {
     $first_name = $_POST['first_name'];
     $last_name = $_POST['last_name'];

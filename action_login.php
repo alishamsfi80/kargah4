@@ -1,9 +1,9 @@
-<?php include('header.php'); ?>
+<?php include('header.php');
+include('function.php'); ?>
 
 <div class="header">
 <?php
-if ((isset($_POST['email']) && !empty($_POST['email']) && isset($_POST['password']) &&
-!empty($_POST['password']))) {
+if (check ($_POST['email']) && check ($_POST['password'])) {
 
     $email = $_POST['email'];
     $password = $_POST['password'];

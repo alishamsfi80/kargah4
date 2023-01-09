@@ -154,9 +154,10 @@ body
 
 .cardimg
 {
-    width: 250px;
+    width: 195px;
     height: 250px;
     border-radius: 10px;
+    margin-left: 10px;
 }
 
 .reservebox

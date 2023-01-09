@@ -8,22 +8,18 @@
             <center>
                 <br /><br />
                 <h4 style="font-family: 'B Titr'; color: yellowgreen;">مشخصات اتاق جدید را وارد کنید</h4>
-                <form class="addroomform">
+                <form class="addroomform" action="action_addroom.php" method="post" >
                     <div class="form-group">
                         <br />
                         <br /><br />
-                        <center><input class="form-control" placeholder="ظرفیت اتاق"></center>
+                        <center><input name="capacity_add" class="form-control" placeholder="ظرفیت اتاق"></center>
                     </div>
                     <br />
                     <div class="form-group">
                         <br />
-                        <input class="form-control" placeholder="قیمت ">
+                        <input name="price_add" class="form-control" placeholder="قیمت ">
                     </div>
                     <br />
-                    <div class="form-group">
-                        <br />
-                        <input class="form-control" type="text" placeholder="توضیحات ">
-                    </div>
                     <br /><br />
                     <button type="submit" class="btn btn-primary">افزودن اتاق</button>
                 </form>

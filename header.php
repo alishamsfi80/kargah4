@@ -39,9 +39,6 @@ session_start();
                 <a href="index.php" class="headerlink">صفحه اصلی</a>
             </li>
             <li class="headerli">
-                <a href="#" class="headerlink">رزرو اتاق </a>
-            </li>
-            <li class="headerli">
                 <a href="#footer" class="headerlink">تماس با ما</a>
             </li>
             <li class="headerli">
@@ -58,7 +55,7 @@ session_start();
             if (isset($_SESSION['admin']) && $_SESSION['admin']) {
                 ?>
                 <li class="headerli">
-                    <a href="#" class="headerlink"> مدیریت اتاق ها</a>
+                    <a href="admin.php" class="headerlink"> مدیریت اتاق ها</a>
                 </li>
                 <?php
             }

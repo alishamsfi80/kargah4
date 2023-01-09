@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Jan 08, 2023 at 08:19 AM
+-- Generation Time: Jan 09, 2023 at 08:10 PM
 -- Server version: 5.7.36
 -- PHP Version: 7.4.26
 
@@ -32,21 +32,18 @@ CREATE TABLE IF NOT EXISTS `room` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `capacity` int(11) NOT NULL DEFAULT '2',
   `price` float NOT NULL,
-  `image` varchar(50) COLLATE ucs2_persian_ci NOT NULL,
-  `explain` text COLLATE ucs2_persian_ci NOT NULL,
+  `image` varchar(50) COLLATE ucs2_persian_ci NOT NULL DEFAULT 'images/room2.jpg',
+  `explain` text COLLATE ucs2_persian_ci,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=12 DEFAULT CHARSET=ucs2 COLLATE=ucs2_persian_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=30 DEFAULT CHARSET=ucs2 COLLATE=ucs2_persian_ci;
 
 --
 -- Dumping data for table `room`
 --
 
 INSERT INTO `room` (`id`, `capacity`, `price`, `image`, `explain`) VALUES
-(7, 2, 300, 'images/room2.jpg', ''),
-(2, 2, 200, 'images/room4.jpg', 'with bed room'),
-(8, 2, 200, 'images/room3.jpg', ''),
-(9, 2, 500, 'images/room1.jpg', ''),
-(11, 2, 300, 'images/room1.jpg', '');
+(7, 2, 500, 'images/room2.jpg', ''),
+(2, 2, 200, 'images/room3.jpg', 'with bed room');
 
 -- --------------------------------------------------------
 
@@ -60,11 +57,31 @@ CREATE TABLE IF NOT EXISTS `room_rezerv` (
   `room_id` int(11) NOT NULL,
   `day` int(11) NOT NULL,
   `rezerv` tinyint(1) NOT NULL DEFAULT '0',
-  `user_id` int(11) NOT NULL,
+  `user_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id_rezerv`),
   KEY `room_id` (`room_id`),
-  KEY `user_id` (`user_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=ucs2 COLLATE=ucs2_persian_ci;
+  KEY `user_id` (`user_id`) USING BTREE
+) ENGINE=MyISAM AUTO_INCREMENT=92 DEFAULT CHARSET=ucs2 COLLATE=ucs2_persian_ci;
+
+--
+-- Dumping data for table `room_rezerv`
+--
+
+INSERT INTO `room_rezerv` (`id_rezerv`, `room_id`, `day`, `rezerv`, `user_id`) VALUES
+(1, 2, 1, 0, NULL),
+(2, 2, 2, 0, NULL),
+(3, 2, 3, 0, NULL),
+(4, 2, 4, 0, NULL),
+(5, 2, 5, 0, NULL),
+(6, 2, 6, 0, NULL),
+(7, 2, 7, 0, NULL),
+(8, 7, 1, 0, NULL),
+(9, 7, 2, 0, NULL),
+(10, 7, 3, 0, NULL),
+(11, 7, 4, 0, NULL),
+(12, 7, 5, 0, NULL),
+(13, 7, 6, 0, NULL),
+(14, 7, 7, 0, NULL);
 
 -- --------------------------------------------------------
 
@@ -85,7 +102,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `national_code` (`national_code`),
   UNIQUE KEY `email` (`email`)
-) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=ucs2 COLLATE=ucs2_persian_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=12 DEFAULT CHARSET=ucs2 COLLATE=ucs2_persian_ci;
 
 --
 -- Dumping data for table `user`

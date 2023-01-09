@@ -15,14 +15,20 @@ if (check($price_add) && check($capacity_add)) {
 
         include("test_rezerv.php");
     } else {
-        echo ("Error description: " . $link->error);
+        ?>
+        <br /><br /><br /><br />
+        <div class="loginactionparent">
+            <div id="loginaction2" class="animate__animated animate__wobble">
+                <br />
+                <p>متاسفیم اتاق اضافه نشد</p>
+                <button class="btn btn-warning" onclick="window.location.href='admin.php';"> بازگشت به صفحه اتاق ها </button>
+            </div>
+        </div>
+        <?PHP
+            }
 
-        echo "<p style='color:red;'><b>افزودن اتاق انجام نشد</b></p>";
-    }
-
-} else
-    // exit("برخی فیلد ها مقدار دهی نشده اند");
-?>
+} else { // exit("برخی فیلد ها مقدار دهی نشده اند");
+    ?>
 <div class="header">
     <br /><br /><br /><br />
     <div class="loginactionparent">
@@ -34,4 +40,4 @@ if (check($price_add) && check($capacity_add)) {
     </div>
     </div>
     
-<?php include('footer.php'); ?>
+<?php } include('footer.php'); ?>

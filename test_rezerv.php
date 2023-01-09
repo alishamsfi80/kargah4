@@ -47,7 +47,7 @@ if ($row) {
         <div class="loginactionparent">
             <div id="loginaction2" class="animate__animated animate__wobble">
                 <br />
-                <p>نام کاربری یا رمز عبور اشتباه است</p>
+                <p>متاسفیم اتاق اضافه نشد</p>
                 <button class="btn btn-warning" onclick="window.location.href='admin.php';"> بازگشت به صفحه اتاق ها </button>
             </div>
         </div>

@@ -26,12 +26,33 @@ else
 }
 if ($s==0)
 {
-    echo "<p style='color:red;'><b>رزرو با موفقیت انجام شد</b></p>";
-    
+    // echo "<p style='color:red;'><b>رزرو با موفقیت انجام شد</b></p>";
+    ?>    <div class="header">
+            <br /><br /><br /><br />
+            <div class="loginactionparent">
+                <div id="loginaction" class="animate__animated animate__wobble">
+                    <br />
+                    <p>اتاق با موفقیت رزرو شد</p>
+                    <button class="btn btn-warning" onclick="window.location.href='index.php';">بازگشت به صفحه‌ی اتاق
+                        ها</button>
+                </div>
+            </div>
+        </div>
+        <?php
 }
 else
 {
-    echo "<p style='color:red;'><b>متاسفیم رزرو انجام نشد</b></p>";
+    // echo "<p style='color:red;'><b>متاسفیم رزرو انجام نشد</b></p>";
+    ?>
+    <br /><br /><br /><br />
+    <div class="loginactionparent">
+        <div id="loginaction2" class="animate__animated animate__wobble">
+            <br />
+            <p>متاسفیم اتاق رزرو نشد</p>
+            <button class="btn btn-warning" onclick="window.location.href='index.php';"> بازگشت به صفحه اتاق ها </button>
+        </div>
+    </div>
+    <?php
 }  
 
 ?>

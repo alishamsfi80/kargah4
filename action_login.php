@@ -7,8 +7,16 @@ include('function.php'); ?>
 
         $email = $_POST['email'];
         $password = $_POST['password'];
-    } else
-        exit("برخی از فیلد ها مقدار دهی نشده است");
+    } else {
+        ?>
+        <script>
+            window.alert("برخی از فیلدها مقداردهی نشده‌اند");
+            location.replace('register.php');
+        
+        </script>
+        <?php
+        exit();
+    }
     $link = mysqli_connect("localhost", "root", "", "hotel");
 
     if (mysqli_connect_errno())

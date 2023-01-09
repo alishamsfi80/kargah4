@@ -25,8 +25,10 @@ include('function.php'); ?>
         <script>
             window.alert("برخی از فیلدها مقداردهی نشده‌اند");
             location.replace('register.php');
+        
         </script>
         <?php
+        exit();
     }
     if ($password != $repassword) {
         ?>
@@ -35,6 +37,7 @@ include('function.php'); ?>
             location.replace('register.php');
         </script>
         <?php
+        exit();
     }
 
     if (filter_var($email, FILTER_VALIDATE_EMAIL) === false) {
@@ -44,6 +47,7 @@ include('function.php'); ?>
             location.replace('register.php');
         </script>
         <?php
+        exit();
     }
     $link = mysqli_connect("localhost", "root", "", "hotel");
 

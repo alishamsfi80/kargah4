@@ -47,13 +47,25 @@ session_start();
             <?php
             if ((isset($_SESSION['login']) && $_SESSION['login'])) {
                 ?>
+                
                 <li class="headerli">
                     <a href="#" class="headerlink" onclick="window.location.href='logout.php';"> خروج</a>
                 </li>
                 <?php
             }
+            if (!(isset($_SESSION['admin']) && $_SESSION['admin'])&&(isset($_SESSION['login']) && $_SESSION['login'])) {
+                ?>
+                <li class="headerli">
+                    <a href="#" class="headerlink" onclick="window.location.href='showrezerv.php';">رزروهای من</a>
+                </li>
+                <?php
+                }
             if (isset($_SESSION['admin']) && $_SESSION['admin']) {
                 ?>
+                <li class="headerli">
+                    <a href="#" class="headerlink" onclick="window.location.href='allrezerv.php';"> کل رزروها</a>
+                </li>
+
                 <li class="headerli">
                     <a href="admin.php" class="headerlink"> مدیریت اتاق ها</a>
                 </li>
